@@ -9,7 +9,7 @@ import crypto from "node:crypto";
 import ExcelJS from "exceljs";
 
 const root = dirname(fileURLToPath(import.meta.url));
-const dataDir = join(root, "data");
+const dataDir = fs.existsSync(join(process.cwd(), ".data")) ? join(process.cwd(), ".data") : join(root, "data");
 mkdirSync(dataDir, { recursive: true });
 const db = new Database(process.env.DATABASE_PATH || join(dataDir, "my-trucks.db"));
 db.pragma("journal_mode = WAL");
