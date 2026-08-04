@@ -2,14 +2,14 @@ import express from "express";
 import Database from "better-sqlite3";
 import { WebSocketServer, WebSocket } from "ws";
 import { createServer } from "node:http";
-import { readFileSync, mkdirSync } from "node:fs";
+import { readFileSync, mkdirSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import crypto from "node:crypto";
 import ExcelJS from "exceljs";
 
 const root = dirname(fileURLToPath(import.meta.url));
-const dataDir = fs.existsSync(join(process.cwd(), ".data")) ? join(process.cwd(), ".data") : join(root, "data");
+const dataDir = existsSync(join(process.cwd(), ".data")) ? join(process.cwd(), ".data") : join(root, "data");
 mkdirSync(dataDir, { recursive: true });
 const db = new Database(process.env.DATABASE_PATH || join(dataDir, "my-trucks.db"));
 db.pragma("journal_mode = WAL");
