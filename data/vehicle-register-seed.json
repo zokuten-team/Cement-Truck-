@@ -1,0 +1,5422 @@
+{
+  "source": "Vehicle Register Q2 26-27.xlsx",
+  "months": [
+    {
+      "name": "JULY",
+      "vehicles": [
+        {
+          "column": "B",
+          "driverName": "KARTHIK",
+          "vehicleNumber": "7317",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 10140,
+          "workbookPayable": 141960,
+          "workbookBalance": 0,
+          "workbookPaid": 141960
+        },
+        {
+          "column": "C",
+          "driverName": "KRISHNA",
+          "vehicleNumber": "8448",
+          "ratePerQuantity": 24,
+          "workbookTotalQuantity": 8060,
+          "workbookPayable": 193440,
+          "workbookBalance": 112581,
+          "workbookPaid": 80859
+        },
+        {
+          "column": "D",
+          "driverName": "SURESH",
+          "vehicleNumber": "7488/5421",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 4930,
+          "workbookPayable": 69020,
+          "workbookBalance": 69020,
+          "workbookPaid": 0
+        },
+        {
+          "column": "E",
+          "driverName": "SURESH",
+          "vehicleNumber": "MURTHY",
+          "ratePerQuantity": 24,
+          "workbookTotalQuantity": 9380,
+          "workbookPayable": 225120,
+          "workbookBalance": 227140,
+          "workbookPaid": -2020
+        },
+        {
+          "column": "F",
+          "driverName": "VIJAY",
+          "vehicleNumber": "0415/4645",
+          "ratePerQuantity": 14.5,
+          "workbookTotalQuantity": 1050,
+          "workbookPayable": 15225,
+          "workbookBalance": 0,
+          "workbookPaid": 15225
+        },
+        {
+          "column": "G",
+          "driverName": "MAHESH",
+          "vehicleNumber": "8744/8059/8629",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 1470,
+          "workbookPayable": 20580,
+          "workbookBalance": 0,
+          "workbookPaid": 20580
+        },
+        {
+          "column": "H",
+          "driverName": "NANJUND",
+          "vehicleNumber": "1430",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 3870,
+          "workbookPayable": 54180,
+          "workbookBalance": 54180,
+          "workbookPaid": 0
+        },
+        {
+          "column": "I",
+          "driverName": "OM0SAI",
+          "vehicleNumber": "1530/0088",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 1880,
+          "workbookPayable": 26320,
+          "workbookBalance": 0,
+          "workbookPaid": 26320
+        },
+        {
+          "column": "J",
+          "driverName": "SRINIVAS",
+          "vehicleNumber": "1843/8712",
+          "ratePerQuantity": 17,
+          "workbookTotalQuantity": 530,
+          "workbookPayable": 8940,
+          "workbookBalance": 0,
+          "workbookPaid": 8940
+        },
+        {
+          "column": "K",
+          "driverName": "SRINIVAS",
+          "vehicleNumber": "3401",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 1545,
+          "workbookPayable": 21630,
+          "workbookBalance": 0,
+          "workbookPaid": 21630
+        },
+        {
+          "column": "L",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "5182/8269",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 2300,
+          "workbookPayable": 32200,
+          "workbookBalance": 32200,
+          "workbookPaid": 0
+        },
+        {
+          "column": "M",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "4383",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 1135,
+          "workbookPayable": 16050,
+          "workbookBalance": 5460,
+          "workbookPaid": 10590
+        },
+        {
+          "column": "N",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "7611",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 250,
+          "workbookPayable": 3500,
+          "workbookBalance": 2100,
+          "workbookPaid": 1400
+        },
+        {
+          "column": "O",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "1456",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 855,
+          "workbookPayable": 11970,
+          "workbookBalance": 7490,
+          "workbookPaid": 4480
+        },
+        {
+          "column": "P",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "PORTER",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 260,
+          "workbookPayable": 3640,
+          "workbookBalance": 0,
+          "workbookPaid": 3640
+        },
+        {
+          "column": "Q",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "8573",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 460,
+          "workbookPayable": 6440,
+          "workbookBalance": 6440,
+          "workbookPaid": 0
+        },
+        {
+          "column": "R",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "1541",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 190,
+          "workbookPayable": 2660,
+          "workbookBalance": 0,
+          "workbookPaid": 2660
+        },
+        {
+          "column": "S",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "282",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 350,
+          "workbookPayable": 4900,
+          "workbookBalance": 4900,
+          "workbookPaid": 0
+        },
+        {
+          "column": "T",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "2248",
+          "ratePerQuantity": 15,
+          "workbookTotalQuantity": 200,
+          "workbookPayable": 3000,
+          "workbookBalance": 0,
+          "workbookPaid": 3000
+        },
+        {
+          "column": "U",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "2145",
+          "ratePerQuantity": 15,
+          "workbookTotalQuantity": 150,
+          "workbookPayable": 2250,
+          "workbookBalance": 0,
+          "workbookPaid": 2250
+        },
+        {
+          "column": "V",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "4868",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 400,
+          "workbookPayable": 5600,
+          "workbookBalance": 0,
+          "workbookPaid": 5600
+        },
+        {
+          "column": "W",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "4409/7692",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 225,
+          "workbookPayable": 3150,
+          "workbookBalance": 3150,
+          "workbookPaid": 0
+        },
+        {
+          "column": "X",
+          "driverName": "YSR",
+          "vehicleNumber": "7160/5154",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 610,
+          "workbookPayable": 8540,
+          "workbookBalance": 8540,
+          "workbookPaid": 0
+        },
+        {
+          "column": "Y",
+          "driverName": "HKH",
+          "vehicleNumber": "4021",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 720,
+          "workbookPayable": 10080,
+          "workbookBalance": 10080,
+          "workbookPaid": 0
+        },
+        {
+          "column": "Z",
+          "driverName": "8271",
+          "vehicleNumber": "AVA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 3670,
+          "workbookPayable": 51380,
+          "workbookBalance": -180,
+          "workbookPaid": 51560
+        },
+        {
+          "column": "AB",
+          "driverName": "JAVED",
+          "vehicleNumber": "8712",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 430,
+          "workbookPayable": 6020,
+          "workbookBalance": 6020,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AD",
+          "driverName": "Unassigned",
+          "vehicleNumber": "KPR",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 1085,
+          "workbookPayable": 15190,
+          "workbookBalance": 15190,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AE",
+          "driverName": "Unassigned",
+          "vehicleNumber": "PS",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 2410,
+          "workbookPayable": 33740,
+          "workbookBalance": 33740,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AF",
+          "driverName": "Unassigned",
+          "vehicleNumber": "ASHOKA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 690,
+          "workbookPayable": 9660,
+          "workbookBalance": 9660,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AG",
+          "driverName": "Unassigned",
+          "vehicleNumber": "RENUKA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 4450,
+          "workbookPayable": 62300,
+          "workbookBalance": 62300,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AH",
+          "driverName": "Unassigned",
+          "vehicleNumber": "VEERA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AI",
+          "driverName": "Unassigned",
+          "vehicleNumber": "MM",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 3215,
+          "workbookPayable": 45010,
+          "workbookBalance": 45010,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AJ",
+          "driverName": "Unassigned",
+          "vehicleNumber": "VENKA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 9640,
+          "workbookPayable": 134960,
+          "workbookBalance": 134960,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AK",
+          "driverName": "Unassigned",
+          "vehicleNumber": "VBS(FOR)",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 1110,
+          "workbookPayable": 15540,
+          "workbookBalance": 15540,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AL",
+          "driverName": "Unassigned",
+          "vehicleNumber": "MANYA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 950,
+          "workbookPayable": 13300,
+          "workbookBalance": 13300,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AM",
+          "driverName": "Unassigned",
+          "vehicleNumber": "NANDA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 2275,
+          "workbookPayable": 31850,
+          "workbookBalance": 31850,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AN",
+          "driverName": "Unassigned",
+          "vehicleNumber": "CHOW",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 2625,
+          "workbookPayable": 36750,
+          "workbookBalance": 36750,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AO",
+          "driverName": "Unassigned",
+          "vehicleNumber": "KK",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 260,
+          "workbookPayable": 3640,
+          "workbookBalance": 3640,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AP",
+          "driverName": "Unassigned",
+          "vehicleNumber": "ABHISHEK",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 460,
+          "workbookPayable": 6440,
+          "workbookBalance": 6440,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AQ",
+          "driverName": "Unassigned",
+          "vehicleNumber": "KUTTI",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 930,
+          "workbookPayable": 13020,
+          "workbookBalance": 13020,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AR",
+          "driverName": "Unassigned",
+          "vehicleNumber": "GRS",
+          "ratePerQuantity": 13,
+          "workbookTotalQuantity": 769,
+          "workbookPayable": 9997,
+          "workbookBalance": 9997,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AS",
+          "driverName": "Unassigned",
+          "vehicleNumber": "OM0SAI",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 498,
+          "workbookPayable": 6972,
+          "workbookBalance": 6972,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AT",
+          "driverName": "Unassigned",
+          "vehicleNumber": "VINAYAKA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 2725,
+          "workbookPayable": 38150,
+          "workbookBalance": 38150,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AU",
+          "driverName": "Unassigned",
+          "vehicleNumber": "HKH",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 1870,
+          "workbookPayable": 26180,
+          "workbookBalance": 26180,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AV",
+          "driverName": "Unassigned",
+          "vehicleNumber": "MALE",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 960,
+          "workbookPayable": 13440,
+          "workbookBalance": 13440,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AW",
+          "driverName": "Unassigned",
+          "vehicleNumber": "SBS/DAKSHA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AX",
+          "driverName": "Unassigned",
+          "vehicleNumber": "MP",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 1150,
+          "workbookPayable": 16100,
+          "workbookBalance": 16100,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AY",
+          "driverName": "Unassigned",
+          "vehicleNumber": "SLN",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 1440,
+          "workbookPayable": 20160,
+          "workbookBalance": 20160,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AZ",
+          "driverName": "Unassigned",
+          "vehicleNumber": "SGML",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 580,
+          "workbookPayable": 8120,
+          "workbookBalance": 8120,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BA",
+          "driverName": "Unassigned",
+          "vehicleNumber": "SLV",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 2010,
+          "workbookPayable": 28140,
+          "workbookBalance": 28140,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BB",
+          "driverName": "Unassigned",
+          "vehicleNumber": "GNN",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 250,
+          "workbookPayable": 3500,
+          "workbookBalance": 3500,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BC",
+          "driverName": "Unassigned",
+          "vehicleNumber": "SREEVARI",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 425,
+          "workbookPayable": 5950,
+          "workbookBalance": 5950,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BD",
+          "driverName": "Unassigned",
+          "vehicleNumber": "KALA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 160,
+          "workbookPayable": 2240,
+          "workbookBalance": 2240,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BE",
+          "driverName": "Unassigned",
+          "vehicleNumber": "BAJARANGI",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 375,
+          "workbookPayable": 5250,
+          "workbookBalance": 5250,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BF",
+          "driverName": "Unassigned",
+          "vehicleNumber": "MNM",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 750,
+          "workbookPayable": 10500,
+          "workbookBalance": 10500,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BG",
+          "driverName": "Unassigned",
+          "vehicleNumber": "CHOW0C",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 1170,
+          "workbookPayable": 16380,
+          "workbookBalance": 16380,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BH",
+          "driverName": "Unassigned",
+          "vehicleNumber": "GANGA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 390,
+          "workbookPayable": 5460,
+          "workbookBalance": 5460,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BI",
+          "driverName": "Unassigned",
+          "vehicleNumber": "LV",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 1165,
+          "workbookPayable": 16310,
+          "workbookBalance": 16310,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BJ",
+          "driverName": "Unassigned",
+          "vehicleNumber": "BALAJI0EP",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 130,
+          "workbookPayable": 1820,
+          "workbookBalance": 1820,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BK",
+          "driverName": "Unassigned",
+          "vehicleNumber": "SBM",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 1880,
+          "workbookPayable": 26320,
+          "workbookBalance": 26320,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BL",
+          "driverName": "Unassigned",
+          "vehicleNumber": "NIMISHAMBHA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 60,
+          "workbookPayable": 840,
+          "workbookBalance": 840,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BM",
+          "driverName": "Unassigned",
+          "vehicleNumber": "HARSHA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 450,
+          "workbookPayable": 6300,
+          "workbookBalance": 6300,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BN",
+          "driverName": "Unassigned",
+          "vehicleNumber": "LV0HKH0NEW",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 180,
+          "workbookPayable": 2520,
+          "workbookBalance": 2520,
+          "workbookPaid": 0
+        }
+      ],
+      "dailyEntries": [
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "7317",
+          "quantity": 420
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "7488/5421",
+          "quantity": 330
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "MURTHY",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "8744/8059/8629",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "3401",
+          "quantity": 130
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "4021",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "MM",
+          "quantity": 75
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "VENKA",
+          "quantity": 400
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "NANDA",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "ABHISHEK",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "KUTTI",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "HKH",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "MALE",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "SLN",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "SGML",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "SLV",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "LV0HKH0NEW",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "7317",
+          "quantity": 320
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "7488/5421",
+          "quantity": 250
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "MURTHY",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "3401",
+          "quantity": 130
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "5182/8269",
+          "quantity": 250
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "4383",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "PORTER",
+          "quantity": 20
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "8573",
+          "quantity": 460
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "7160/5154",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "4021",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "KPR",
+          "quantity": 140
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "PS",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "RENUKA",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "MM",
+          "quantity": 220
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "VENKA",
+          "quantity": 650
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "VBS(FOR)",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "NANDA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "ABHISHEK",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "OM0SAI",
+          "quantity": 28
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "MALE",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "SGML",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "GANGA",
+          "quantity": 170
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "LV",
+          "quantity": 30
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "BALAJI0EP",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "7317",
+          "quantity": 450
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "7488/5421",
+          "quantity": 170
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "MURTHY",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "5182/8269",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "8712",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "RENUKA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "MM",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "VENKA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "MANYA",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "NANDA",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "CHOW",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "KUTTI",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "GRS",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "MALE",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "SGML",
+          "quantity": 40
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "MNM",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "SBM",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "NIMISHAMBHA",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "7317",
+          "quantity": 340
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "7488/5421",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "MURTHY",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "0415/4645",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "8744/8059/8629",
+          "quantity": 130
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "4868",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "KPR",
+          "quantity": 110
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "PS",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "RENUKA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "MM",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "VENKA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "CHOW",
+          "quantity": 125
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "KUTTI",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "GRS",
+          "quantity": 170
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "OM0SAI",
+          "quantity": 40
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "HKH",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "MALE",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "SLN",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "SLV",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "HARSHA",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-05",
+          "vehicleNumber": "7317",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-05",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-05",
+          "vehicleNumber": "7488/5421",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-05",
+          "vehicleNumber": "8744/8059/8629",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-05",
+          "vehicleNumber": "KPR",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-05",
+          "vehicleNumber": "MM",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-05",
+          "vehicleNumber": "VENKA",
+          "quantity": 250
+        },
+        {
+          "date": "2026-07-05",
+          "vehicleNumber": "MANYA",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-05",
+          "vehicleNumber": "NANDA",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-05",
+          "vehicleNumber": "CHOW",
+          "quantity": 160
+        },
+        {
+          "date": "2026-07-05",
+          "vehicleNumber": "GRS",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-05",
+          "vehicleNumber": "OM0SAI",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-05",
+          "vehicleNumber": "SLV",
+          "quantity": 400
+        },
+        {
+          "date": "2026-07-05",
+          "vehicleNumber": "SBM",
+          "quantity": 170
+        },
+        {
+          "date": "2026-07-05",
+          "vehicleNumber": "HARSHA",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "7317",
+          "quantity": 350
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "7488/5421",
+          "quantity": 280
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "MURTHY",
+          "quantity": 560
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "8744/8059/8629",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "1430",
+          "quantity": 410
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "4383",
+          "quantity": 175
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "1456",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "7160/5154",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "RENUKA",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "MM",
+          "quantity": 90
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "VENKA",
+          "quantity": 400
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "VBS(FOR)",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "NANDA",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "KUTTI",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 180
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "HKH",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "MALE",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "MNM",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "SBM",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "7317",
+          "quantity": 410
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "7488/5421",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "MURTHY",
+          "quantity": 280
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "1430",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "1843/8712",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "4868",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "ASHOKA",
+          "quantity": 30
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "RENUKA",
+          "quantity": 400
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "MM",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "VENKA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "VBS(FOR)",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "MANYA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "NANDA",
+          "quantity": 130
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "CHOW",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "HKH",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "MALE",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "MP",
+          "quantity": 210
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "BAJARANGI",
+          "quantity": 225
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "MNM",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "7317",
+          "quantity": 350
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "7488/5421",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "1430",
+          "quantity": 520
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "1530/0088",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "3401",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "5182/8269",
+          "quantity": 160
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "1456",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "PORTER",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "7160/5154",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "8712",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "KPR",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "PS",
+          "quantity": 170
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "RENUKA",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "MM",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "VENKA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "VBS(FOR)",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "MANYA",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "NANDA",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "CHOW",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "SLN",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "SGML",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "BAJARANGI",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "MNM",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "LV",
+          "quantity": 130
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "7317",
+          "quantity": 320
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "MURTHY",
+          "quantity": 560
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "1430",
+          "quantity": 390
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "3401",
+          "quantity": 130
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "5182/8269",
+          "quantity": 300
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "4383",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "1456",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "7160/5154",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "ASHOKA",
+          "quantity": 40
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "RENUKA",
+          "quantity": 400
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "MM",
+          "quantity": 180
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "VENKA",
+          "quantity": 300
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "MANYA",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "CHOW",
+          "quantity": 110
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "HKH",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "MALE",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "SGML",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-09",
+          "vehicleNumber": "KALA",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "7317",
+          "quantity": 480
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "7488/5421",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "MURTHY",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "1430",
+          "quantity": 140
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "1843/8712",
+          "quantity": 130
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "5182/8269",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "4383",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "PORTER",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "4021",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "KPR",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "MM",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "VENKA",
+          "quantity": 300
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "NANDA",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "KUTTI",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "GRS",
+          "quantity": 189
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "OM0SAI",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "HKH",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "MALE",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "MP",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "7317",
+          "quantity": 250
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "7488/5421",
+          "quantity": 250
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "MURTHY",
+          "quantity": 540
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "0415/4645",
+          "quantity": 170
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "1430",
+          "quantity": 230
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "1530/0088",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "3401",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "5182/8269",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "1456",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "7160/5154",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "4021",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "PS",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "ASHOKA",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "RENUKA",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "VENKA",
+          "quantity": 400
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "VBS(FOR)",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "MANYA",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "NANDA",
+          "quantity": 240
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "CHOW",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "OM0SAI",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "HKH",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "MP",
+          "quantity": 30
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "SLN",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "SLV",
+          "quantity": 300
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "BAJARANGI",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "LV",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-11",
+          "vehicleNumber": "HARSHA",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-12",
+          "vehicleNumber": "7317",
+          "quantity": 390
+        },
+        {
+          "date": "2026-07-12",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-12",
+          "vehicleNumber": "MURTHY",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-12",
+          "vehicleNumber": "1530/0088",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-12",
+          "vehicleNumber": "3401",
+          "quantity": 250
+        },
+        {
+          "date": "2026-07-12",
+          "vehicleNumber": "1456",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-12",
+          "vehicleNumber": "PS",
+          "quantity": 160
+        },
+        {
+          "date": "2026-07-12",
+          "vehicleNumber": "RENUKA",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-12",
+          "vehicleNumber": "VENKA",
+          "quantity": 250
+        },
+        {
+          "date": "2026-07-12",
+          "vehicleNumber": "NANDA",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-12",
+          "vehicleNumber": "MNM",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-12",
+          "vehicleNumber": "GANGA",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-12",
+          "vehicleNumber": "LV0HKH0NEW",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "7317",
+          "quantity": 300
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "7488/5421",
+          "quantity": 320
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "MURTHY",
+          "quantity": 360
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "8744/8059/8629",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "3401",
+          "quantity": 275
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "5182/8269",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "4383",
+          "quantity": 110
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "1456",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "4868",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "7160/5154",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "4021",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "AVA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "8712",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "PS",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "RENUKA",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "MM",
+          "quantity": 270
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "VENKA",
+          "quantity": 400
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "KUTTI",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "OM0SAI",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "HKH",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "BALAJI0EP",
+          "quantity": 30
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "SBM",
+          "quantity": 250
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "7317",
+          "quantity": 340
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "7488/5421",
+          "quantity": 170
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "MURTHY",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "1430",
+          "quantity": 180
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "4383",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "PORTER",
+          "quantity": 20
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "AVA",
+          "quantity": 190
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "PS",
+          "quantity": 275
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "ASHOKA",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "RENUKA",
+          "quantity": 250
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "MM",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "VENKA",
+          "quantity": 550
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "VBS(FOR)",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "NANDA",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "CHOW",
+          "quantity": 130
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "KK",
+          "quantity": 40
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "MP",
+          "quantity": 55
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "SLN",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "LV",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "7317",
+          "quantity": 360
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "7488/5421",
+          "quantity": 250
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "MURTHY",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "1430",
+          "quantity": 160
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "3401",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "4021",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "8712",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "PS",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "RENUKA",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "MM",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "VENKA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "VBS(FOR)",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "MANYA",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "NANDA",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "ABHISHEK",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "GRS",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "HKH",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "MALE",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "SLV",
+          "quantity": 300
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "MNM",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "LV",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "SBM",
+          "quantity": 180
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "7317",
+          "quantity": 360
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "7488/5421",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "MURTHY",
+          "quantity": 280
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "8744/8059/8629",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "1430",
+          "quantity": 310
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "1530/0088",
+          "quantity": 130
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "1456",
+          "quantity": 125
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "2248",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "2145",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "4021",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "AVA",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "PS",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "RENUKA",
+          "quantity": 250
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "MM",
+          "quantity": 175
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "VBS(FOR)",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "KUTTI",
+          "quantity": 160
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "HKH",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "MP",
+          "quantity": 210
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "SGML",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "BAJARANGI",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "CHOW0C",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "GANGA",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-16",
+          "vehicleNumber": "LV",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "7317",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "7488/5421",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "MURTHY",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "8744/8059/8629",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "1430",
+          "quantity": 250
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "1530/0088",
+          "quantity": 300
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "3401",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "5182/8269",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "AVA",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "RENUKA",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "VENKA",
+          "quantity": 460
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "VBS(FOR)",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "MANYA",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "NANDA",
+          "quantity": 180
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "HKH",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "MALE",
+          "quantity": 180
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "SLN",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "SREEVARI",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "MNM",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "CHOW0C",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "LV",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-18",
+          "vehicleNumber": "7317",
+          "quantity": 290
+        },
+        {
+          "date": "2026-07-18",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-18",
+          "vehicleNumber": "MURTHY",
+          "quantity": 280
+        },
+        {
+          "date": "2026-07-18",
+          "vehicleNumber": "1430",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-18",
+          "vehicleNumber": "1530/0088",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-18",
+          "vehicleNumber": "5182/8269",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-18",
+          "vehicleNumber": "1456",
+          "quantity": 160
+        },
+        {
+          "date": "2026-07-18",
+          "vehicleNumber": "1541",
+          "quantity": 110
+        },
+        {
+          "date": "2026-07-18",
+          "vehicleNumber": "KPR",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-18",
+          "vehicleNumber": "ASHOKA",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-18",
+          "vehicleNumber": "MM",
+          "quantity": 280
+        },
+        {
+          "date": "2026-07-18",
+          "vehicleNumber": "VENKA",
+          "quantity": 550
+        },
+        {
+          "date": "2026-07-18",
+          "vehicleNumber": "VBS(FOR)",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-18",
+          "vehicleNumber": "NANDA",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-18",
+          "vehicleNumber": "CHOW",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-18",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-18",
+          "vehicleNumber": "HKH",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-19",
+          "vehicleNumber": "7317",
+          "quantity": 300
+        },
+        {
+          "date": "2026-07-19",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-19",
+          "vehicleNumber": "1430",
+          "quantity": 140
+        },
+        {
+          "date": "2026-07-19",
+          "vehicleNumber": "PS",
+          "quantity": 25
+        },
+        {
+          "date": "2026-07-19",
+          "vehicleNumber": "RENUKA",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-19",
+          "vehicleNumber": "CHOW",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-19",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "MURTHY",
+          "quantity": 560
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "1430",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "4868",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "7160/5154",
+          "quantity": 160
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "AVA",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "PS",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "ASHOKA",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "RENUKA",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "MM",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "VENKA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "VBS(FOR)",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "CHOW",
+          "quantity": 300
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "OM0SAI",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "HKH",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "MP",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "SLN",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "SLV",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "SREEVARI",
+          "quantity": 75
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "MNM",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "LV",
+          "quantity": 15
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "SBM",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "7317",
+          "quantity": 170
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "7488/5421",
+          "quantity": 280
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "MURTHY",
+          "quantity": 560
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "0415/4645",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "1843/8712",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "5182/8269",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "4383",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "1541",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "282",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "AVA",
+          "quantity": 280
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "KPR",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "PS",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "ASHOKA",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "MM",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "VENKA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "NANDA",
+          "quantity": 30
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "CHOW",
+          "quantity": 230
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "KK",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "SLN",
+          "quantity": 170
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "SLV",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "SREEVARI",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "LV",
+          "quantity": 20
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "HARSHA",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "7317",
+          "quantity": 330
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "7488/5421",
+          "quantity": 220
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "MURTHY",
+          "quantity": 280
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "8744/8059/8629",
+          "quantity": 160
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "1430",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "4383",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "282",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "AVA",
+          "quantity": 230
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "KPR",
+          "quantity": 110
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "PS",
+          "quantity": 160
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "RENUKA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "VENKA",
+          "quantity": 300
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "CHOW",
+          "quantity": 180
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "KK",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "ABHISHEK",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "KUTTI",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "MP",
+          "quantity": 155
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "LV",
+          "quantity": 170
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "SBM",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-22",
+          "vehicleNumber": "HARSHA",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "7317",
+          "quantity": 550
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "7488/5421",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "MURTHY",
+          "quantity": 280
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "0415/4645",
+          "quantity": 230
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "8744/8059/8629",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "1430",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "1530/0088",
+          "quantity": 250
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "1843/8712",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "3401",
+          "quantity": 160
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "5182/8269",
+          "quantity": 320
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "7611",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "PORTER",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "AVA",
+          "quantity": 400
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "8712",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "KPR",
+          "quantity": 130
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "PS",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "RENUKA",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "VENKA",
+          "quantity": 500
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "MANYA",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "CHOW",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "KUTTI",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "HKH",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "MNM",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "CHOW0C",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "SBM",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-23",
+          "vehicleNumber": "HARSHA",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "7317",
+          "quantity": 440
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "MURTHY",
+          "quantity": 280
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "0415/4645",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "8744/8059/8629",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "1430",
+          "quantity": 230
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "5182/8269",
+          "quantity": 180
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "4383",
+          "quantity": 130
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "7611",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "AVA",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "PS",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "ASHOKA",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "MM",
+          "quantity": 175
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "VENKA",
+          "quantity": 230
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "NANDA",
+          "quantity": 155
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "CHOW",
+          "quantity": 300
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "KK",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "ABHISHEK",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "HKH",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "SLV",
+          "quantity": 300
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "KALA",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "MNM",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "7317",
+          "quantity": 320
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "7488/5421",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "MURTHY",
+          "quantity": 540
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "1430",
+          "quantity": 130
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "1530/0088",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "AVA",
+          "quantity": 140
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "8712",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "KPR",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "PS",
+          "quantity": 210
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "ASHOKA",
+          "quantity": 30
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "RENUKA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "MM",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "VENKA",
+          "quantity": 500
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "VBS(FOR)",
+          "quantity": 110
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "NANDA",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "CHOW",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 125
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "HKH",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "MALE",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "MP",
+          "quantity": 220
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "SGML",
+          "quantity": 40
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "GNN",
+          "quantity": 250
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "SREEVARI",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "LV",
+          "quantity": 240
+        },
+        {
+          "date": "2026-07-26",
+          "vehicleNumber": "7317",
+          "quantity": 300
+        },
+        {
+          "date": "2026-07-26",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-26",
+          "vehicleNumber": "MURTHY",
+          "quantity": 280
+        },
+        {
+          "date": "2026-07-26",
+          "vehicleNumber": "1430",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-26",
+          "vehicleNumber": "1530/0088",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-26",
+          "vehicleNumber": "282",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-26",
+          "vehicleNumber": "2248",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-26",
+          "vehicleNumber": "AVA",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-26",
+          "vehicleNumber": "RENUKA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-26",
+          "vehicleNumber": "VENKA",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-26",
+          "vehicleNumber": "HKH",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-26",
+          "vehicleNumber": "MALE",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-26",
+          "vehicleNumber": "SLV",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "7317",
+          "quantity": 380
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "MURTHY",
+          "quantity": 280
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "1430",
+          "quantity": 160
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "1530/0088",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "5182/8269",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "4383",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "4409/7692",
+          "quantity": 175
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "7160/5154",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "AVA",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "KPR",
+          "quantity": 25
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "PS",
+          "quantity": 35
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "ASHOKA",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "RENUKA",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "MM",
+          "quantity": 170
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "VENKA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "CHOW",
+          "quantity": 190
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "GRS",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "LV",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "SBM",
+          "quantity": 140
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "7317",
+          "quantity": 180
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "MURTHY",
+          "quantity": 280
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "5182/8269",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "AVA",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "KPR",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "PS",
+          "quantity": 145
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "ASHOKA",
+          "quantity": 30
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "RENUKA",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "MM",
+          "quantity": 180
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "VENKA",
+          "quantity": 450
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "KUTTI",
+          "quantity": 130
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "GRS",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "HKH",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "MP",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "SLN",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "SGML",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "SBM",
+          "quantity": 320
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "7317",
+          "quantity": 380
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "7488/5421",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "MURTHY",
+          "quantity": 280
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "0415/4645",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "8744/8059/8629",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "1430",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "1530/0088",
+          "quantity": 400
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "5182/8269",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "4409/7692",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "AVA",
+          "quantity": 450
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "RENUKA",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "MM",
+          "quantity": 130
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "VENKA",
+          "quantity": 400
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "NANDA",
+          "quantity": 240
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "SLV",
+          "quantity": 180
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "SREEVARI",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "MNM",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "CHOW0C",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "SBM",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "HARSHA",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "LV0HKH0NEW",
+          "quantity": 60
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "7317",
+          "quantity": 380
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "7488/5421",
+          "quantity": 210
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "MURTHY",
+          "quantity": 280
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "8744/8059/8629",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "1530/0088",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "5182/8269",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "AVA",
+          "quantity": 440
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "8712",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "KPR",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "RENUKA",
+          "quantity": 300
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "VENKA",
+          "quantity": 450
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "NANDA",
+          "quantity": 80
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "ABHISHEK",
+          "quantity": 70
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 180
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "MP",
+          "quantity": 20
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "SLN",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "MNM",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "CHOW0C",
+          "quantity": 500
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "7317",
+          "quantity": 280
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "7488/5421",
+          "quantity": 670
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "MURTHY",
+          "quantity": 280
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "0415/4645",
+          "quantity": 250
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "8744/8059/8629",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "4383",
+          "quantity": 90
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "AVA",
+          "quantity": 300
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "PS",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "RENUKA",
+          "quantity": 100
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "VENKA",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "VBS(FOR)",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "NANDA",
+          "quantity": 160
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "CHOW",
+          "quantity": 180
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "GRS",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "HKH",
+          "quantity": 120
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "SLN",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "SLV",
+          "quantity": 150
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "SREEVARI",
+          "quantity": 30
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "MNM",
+          "quantity": 50
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "CHOW0C",
+          "quantity": 200
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "BALAJI0EP",
+          "quantity": 50
+        }
+      ],
+      "payments": [
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "7317",
+          "amount": 4500
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "8448",
+          "amount": -58266
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "MURTHY",
+          "amount": -2020
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "0415/4645",
+          "amount": 1740
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "1843/8712",
+          "amount": 3300
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "3401",
+          "amount": 3640
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "4383",
+          "amount": 7070
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "7611",
+          "amount": 1400
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "1456",
+          "amount": 4480
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "PORTER",
+          "amount": 2660
+        },
+        {
+          "date": "2026-07-01",
+          "vehicleNumber": "AVA",
+          "amount": 31920
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "7317",
+          "amount": 31068
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "8448",
+          "amount": 30000
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "4383",
+          "amount": 2400
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "PORTER",
+          "amount": 700
+        },
+        {
+          "date": "2026-07-02",
+          "vehicleNumber": "AVA",
+          "amount": 19640
+        },
+        {
+          "date": "2026-07-03",
+          "vehicleNumber": "PORTER",
+          "amount": 280
+        },
+        {
+          "date": "2026-07-04",
+          "vehicleNumber": "4868",
+          "amount": 1400
+        },
+        {
+          "date": "2026-07-05",
+          "vehicleNumber": "7317",
+          "amount": 15000
+        },
+        {
+          "date": "2026-07-05",
+          "vehicleNumber": "1541",
+          "amount": 1540
+        },
+        {
+          "date": "2026-07-06",
+          "vehicleNumber": "8744/8059/8629",
+          "amount": 3640
+        },
+        {
+          "date": "2026-07-07",
+          "vehicleNumber": "4868",
+          "amount": 1400
+        },
+        {
+          "date": "2026-07-08",
+          "vehicleNumber": "8448",
+          "amount": 25000
+        },
+        {
+          "date": "2026-07-10",
+          "vehicleNumber": "1843/8712",
+          "amount": 5640
+        },
+        {
+          "date": "2026-07-12",
+          "vehicleNumber": "7317",
+          "amount": 20000
+        },
+        {
+          "date": "2026-07-12",
+          "vehicleNumber": "3401",
+          "amount": 7000
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "8448",
+          "amount": 37291
+        },
+        {
+          "date": "2026-07-13",
+          "vehicleNumber": "4868",
+          "amount": 1400
+        },
+        {
+          "date": "2026-07-14",
+          "vehicleNumber": "8744/8059/8629",
+          "amount": 2800
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "7317",
+          "amount": 5000
+        },
+        {
+          "date": "2026-07-15",
+          "vehicleNumber": "3401",
+          "amount": 6650
+        },
+        {
+          "date": "2026-07-17",
+          "vehicleNumber": "2145",
+          "amount": 2250
+        },
+        {
+          "date": "2026-07-19",
+          "vehicleNumber": "7317",
+          "amount": 15000
+        },
+        {
+          "date": "2026-07-19",
+          "vehicleNumber": "0415/4645",
+          "amount": 2465
+        },
+        {
+          "date": "2026-07-19",
+          "vehicleNumber": "8744/8059/8629",
+          "amount": 4200
+        },
+        {
+          "date": "2026-07-19",
+          "vehicleNumber": "3401",
+          "amount": 2100
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "7317",
+          "amount": 10000
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "8448",
+          "amount": 6000
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "1530/0088",
+          "amount": 11900
+        },
+        {
+          "date": "2026-07-20",
+          "vehicleNumber": "4868",
+          "amount": 1400
+        },
+        {
+          "date": "2026-07-21",
+          "vehicleNumber": "1530/0088",
+          "amount": 14420
+        },
+        {
+          "date": "2026-07-24",
+          "vehicleNumber": "4383",
+          "amount": 1120
+        },
+        {
+          "date": "2026-07-25",
+          "vehicleNumber": "3401",
+          "amount": 2240
+        },
+        {
+          "date": "2026-07-26",
+          "vehicleNumber": "7317",
+          "amount": 15000
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "7317",
+          "amount": 3000
+        },
+        {
+          "date": "2026-07-27",
+          "vehicleNumber": "2248",
+          "amount": 1500
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "7317",
+          "amount": -108
+        },
+        {
+          "date": "2026-07-28",
+          "vehicleNumber": "2248",
+          "amount": 1500
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "7317",
+          "amount": 5000
+        },
+        {
+          "date": "2026-07-29",
+          "vehicleNumber": "1541",
+          "amount": 1120
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "7317",
+          "amount": 20000
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "8448",
+          "amount": 40834
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "0415/4645",
+          "amount": 11020
+        },
+        {
+          "date": "2026-07-30",
+          "vehicleNumber": "8744/8059/8629",
+          "amount": 9940
+        },
+        {
+          "date": "2026-07-31",
+          "vehicleNumber": "7317",
+          "amount": -1500
+        }
+      ],
+      "workbookDailyTotals": [
+        {
+          "date": "2026-07-01",
+          "quantity": 2965,
+          "mt": 148.25
+        },
+        {
+          "date": "2026-07-02",
+          "quantity": 4408,
+          "mt": 220.4
+        },
+        {
+          "date": "2026-07-03",
+          "quantity": 2760,
+          "mt": 138
+        },
+        {
+          "date": "2026-07-04",
+          "quantity": 3165,
+          "mt": 158.25
+        },
+        {
+          "date": "2026-07-05",
+          "quantity": 2120,
+          "mt": 106
+        },
+        {
+          "date": "2026-07-06",
+          "quantity": 3625,
+          "mt": 181.25
+        },
+        {
+          "date": "2026-07-07",
+          "quantity": 3425,
+          "mt": 171.25
+        },
+        {
+          "date": "2026-07-08",
+          "quantity": 3300,
+          "mt": 165
+        },
+        {
+          "date": "2026-07-09",
+          "quantity": 3790,
+          "mt": 189.5
+        },
+        {
+          "date": "2026-07-10",
+          "quantity": 3009,
+          "mt": 150.45
+        },
+        {
+          "date": "2026-07-11",
+          "quantity": 4340,
+          "mt": 217
+        },
+        {
+          "date": "2026-07-12",
+          "quantity": 2230,
+          "mt": 111.5
+        },
+        {
+          "date": "2026-07-13",
+          "quantity": 3805,
+          "mt": 190.25
+        },
+        {
+          "date": "2026-07-14",
+          "quantity": 3240,
+          "mt": 162
+        },
+        {
+          "date": "2026-07-15",
+          "quantity": 3560,
+          "mt": 178
+        },
+        {
+          "date": "2026-07-16",
+          "quantity": 3830,
+          "mt": 191.5
+        },
+        {
+          "date": "2026-07-17",
+          "quantity": 3700,
+          "mt": 185
+        },
+        {
+          "date": "2026-07-18",
+          "quantity": 3000,
+          "mt": 150
+        },
+        {
+          "date": "2026-07-19",
+          "quantity": 1285,
+          "mt": 64.25
+        },
+        {
+          "date": "2026-07-20",
+          "quantity": 3450,
+          "mt": 172.5
+        },
+        {
+          "date": "2026-07-21",
+          "quantity": 3240,
+          "mt": 162
+        },
+        {
+          "date": "2026-07-22",
+          "quantity": 3425,
+          "mt": 171.25
+        },
+        {
+          "date": "2026-07-23",
+          "quantity": 4840,
+          "mt": 242
+        },
+        {
+          "date": "2026-07-24",
+          "quantity": 3810,
+          "mt": 190.5
+        },
+        {
+          "date": "2026-07-25",
+          "quantity": 4185,
+          "mt": 209.25
+        },
+        {
+          "date": "2026-07-26",
+          "quantity": 2000,
+          "mt": 100
+        },
+        {
+          "date": "2026-07-27",
+          "quantity": 3095,
+          "mt": 154.75
+        },
+        {
+          "date": "2026-07-28",
+          "quantity": 3125,
+          "mt": 156.25
+        },
+        {
+          "date": "2026-07-29",
+          "quantity": 3960,
+          "mt": 198
+        },
+        {
+          "date": "2026-07-30",
+          "quantity": 3940,
+          "mt": 197
+        },
+        {
+          "date": "2026-07-31",
+          "quantity": 3920,
+          "mt": 196
+        }
+      ]
+    },
+    {
+      "name": "AUGUST",
+      "vehicles": [
+        {
+          "column": "B",
+          "driverName": "KARTHIK",
+          "vehicleNumber": "7317",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 660,
+          "workbookPayable": 9240,
+          "workbookBalance": 4632,
+          "workbookPaid": 4608
+        },
+        {
+          "column": "C",
+          "driverName": "KRISHNA",
+          "vehicleNumber": "8448",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 780,
+          "workbookPayable": 10920,
+          "workbookBalance": 10920,
+          "workbookPaid": 0
+        },
+        {
+          "column": "D",
+          "driverName": "SURESH",
+          "vehicleNumber": "7488/5421",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 460,
+          "workbookPayable": 6440,
+          "workbookBalance": 6440,
+          "workbookPaid": 0
+        },
+        {
+          "column": "E",
+          "driverName": "SURESH",
+          "vehicleNumber": "MURTHY",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 540,
+          "workbookPayable": 7560,
+          "workbookBalance": 7560,
+          "workbookPaid": 0
+        },
+        {
+          "column": "F",
+          "driverName": "VIJAY",
+          "vehicleNumber": "0415/4645",
+          "ratePerQuantity": 14.5,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "G",
+          "driverName": "MAHESH",
+          "vehicleNumber": "8744/8059/8629",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 150,
+          "workbookPayable": 2100,
+          "workbookBalance": 2100,
+          "workbookPaid": 0
+        },
+        {
+          "column": "H",
+          "driverName": "NANJUND",
+          "vehicleNumber": "1430",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 375,
+          "workbookPayable": 5250,
+          "workbookBalance": 5250,
+          "workbookPaid": 0
+        },
+        {
+          "column": "I",
+          "driverName": "OM0SAI",
+          "vehicleNumber": "1530/0088",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 75,
+          "workbookPayable": 1050,
+          "workbookBalance": 1050,
+          "workbookPaid": 0
+        },
+        {
+          "column": "J",
+          "driverName": "SRINIVAS",
+          "vehicleNumber": "1843/8712",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "K",
+          "driverName": "SRINIVAS",
+          "vehicleNumber": "3401",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "L",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "5182/8269",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 200,
+          "workbookPayable": 2800,
+          "workbookBalance": 2800,
+          "workbookPaid": 0
+        },
+        {
+          "column": "M",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "4383",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 790,
+          "workbookPayable": 11060,
+          "workbookBalance": 11060,
+          "workbookPaid": 0
+        },
+        {
+          "column": "N",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "7611",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "O",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "1456",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "P",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "PORTER",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "Q",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "8573",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "R",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "1541",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "S",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "282",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "T",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "2248",
+          "ratePerQuantity": 15,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "U",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "2145",
+          "ratePerQuantity": 15,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "V",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "4868",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "W",
+          "driverName": "SEEGEHALLI",
+          "vehicleNumber": "7692",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 50,
+          "workbookPayable": 700,
+          "workbookBalance": 700,
+          "workbookPaid": 0
+        },
+        {
+          "column": "X",
+          "driverName": "YSR",
+          "vehicleNumber": "7160/5154",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "Y",
+          "driverName": "HKH",
+          "vehicleNumber": "4021",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 100,
+          "workbookPayable": 1400,
+          "workbookBalance": 1400,
+          "workbookPaid": 0
+        },
+        {
+          "column": "Z",
+          "driverName": "8271",
+          "vehicleNumber": "AVA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 1055,
+          "workbookPayable": 14770,
+          "workbookBalance": 5950,
+          "workbookPaid": 8820
+        },
+        {
+          "column": "AA",
+          "driverName": "8271",
+          "vehicleNumber": "4409",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AB",
+          "driverName": "JAVED",
+          "vehicleNumber": "8712",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 125,
+          "workbookPayable": 1750,
+          "workbookBalance": 1750,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AC",
+          "driverName": "JAVED",
+          "vehicleNumber": "8735",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AD",
+          "driverName": "JAVED",
+          "vehicleNumber": "KPR",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AE",
+          "driverName": "JAVED",
+          "vehicleNumber": "PS",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 95,
+          "workbookPayable": 1330,
+          "workbookBalance": 1330,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AF",
+          "driverName": "JAVED",
+          "vehicleNumber": "ASHOKA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 60,
+          "workbookPayable": 840,
+          "workbookBalance": 840,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AG",
+          "driverName": "JAVED",
+          "vehicleNumber": "RENUKA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 525,
+          "workbookPayable": 7350,
+          "workbookBalance": 7350,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AH",
+          "driverName": "JAVED",
+          "vehicleNumber": "VEERA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AI",
+          "driverName": "JAVED",
+          "vehicleNumber": "MM",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 170,
+          "workbookPayable": 2380,
+          "workbookBalance": 2380,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AJ",
+          "driverName": "JAVED",
+          "vehicleNumber": "VENKA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 600,
+          "workbookPayable": 8400,
+          "workbookBalance": 8400,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AK",
+          "driverName": "JAVED",
+          "vehicleNumber": "VBS(FOR)",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 100,
+          "workbookPayable": 1400,
+          "workbookBalance": 1400,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AL",
+          "driverName": "JAVED",
+          "vehicleNumber": "MANYA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AM",
+          "driverName": "JAVED",
+          "vehicleNumber": "NANDA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 60,
+          "workbookPayable": 840,
+          "workbookBalance": 840,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AN",
+          "driverName": "JAVED",
+          "vehicleNumber": "CHOW",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 70,
+          "workbookPayable": 980,
+          "workbookBalance": 980,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AO",
+          "driverName": "JAVED",
+          "vehicleNumber": "KK",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 100,
+          "workbookPayable": 1400,
+          "workbookBalance": 1400,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AP",
+          "driverName": "JAVED",
+          "vehicleNumber": "ABHISHEK",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 70,
+          "workbookPayable": 980,
+          "workbookBalance": 980,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AQ",
+          "driverName": "JAVED",
+          "vehicleNumber": "KUTTI",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 140,
+          "workbookPayable": 1960,
+          "workbookBalance": 1960,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AR",
+          "driverName": "JAVED",
+          "vehicleNumber": "GRS",
+          "ratePerQuantity": 13,
+          "workbookTotalQuantity": 200,
+          "workbookPayable": 2600,
+          "workbookBalance": 2600,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AS",
+          "driverName": "JAVED",
+          "vehicleNumber": "OM0SAI",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AT",
+          "driverName": "JAVED",
+          "vehicleNumber": "VINAYAKA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 150,
+          "workbookPayable": 2100,
+          "workbookBalance": 2100,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AU",
+          "driverName": "JAVED",
+          "vehicleNumber": "HKH",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 100,
+          "workbookPayable": 1400,
+          "workbookBalance": 1400,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AV",
+          "driverName": "JAVED",
+          "vehicleNumber": "MALE",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AW",
+          "driverName": "JAVED",
+          "vehicleNumber": "SBS/DAKSHA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AX",
+          "driverName": "JAVED",
+          "vehicleNumber": "MP",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 75,
+          "workbookPayable": 1050,
+          "workbookBalance": 1050,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AY",
+          "driverName": "JAVED",
+          "vehicleNumber": "SLN",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "AZ",
+          "driverName": "JAVED",
+          "vehicleNumber": "SGML",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BA",
+          "driverName": "JAVED",
+          "vehicleNumber": "SLV",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 200,
+          "workbookPayable": 2800,
+          "workbookBalance": 2800,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BB",
+          "driverName": "JAVED",
+          "vehicleNumber": "GNN",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BC",
+          "driverName": "JAVED",
+          "vehicleNumber": "SREEVARI",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BD",
+          "driverName": "JAVED",
+          "vehicleNumber": "KALA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BE",
+          "driverName": "JAVED",
+          "vehicleNumber": "BAJARANGI",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 110,
+          "workbookPayable": 1540,
+          "workbookBalance": 1540,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BF",
+          "driverName": "JAVED",
+          "vehicleNumber": "MNM",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 50,
+          "workbookPayable": 700,
+          "workbookBalance": 700,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BG",
+          "driverName": "JAVED",
+          "vehicleNumber": "CHOW0C",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 100,
+          "workbookPayable": 1400,
+          "workbookBalance": 1400,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BH",
+          "driverName": "JAVED",
+          "vehicleNumber": "GANGA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BI",
+          "driverName": "JAVED",
+          "vehicleNumber": "LV",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BJ",
+          "driverName": "JAVED",
+          "vehicleNumber": "BALAJI0EP",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BK",
+          "driverName": "JAVED",
+          "vehicleNumber": "SBM",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 250,
+          "workbookPayable": 3500,
+          "workbookBalance": 3500,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BL",
+          "driverName": "JAVED",
+          "vehicleNumber": "NIMISHAMBHA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BM",
+          "driverName": "JAVED",
+          "vehicleNumber": "HARSHA",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        },
+        {
+          "column": "BN",
+          "driverName": "JAVED",
+          "vehicleNumber": "LV0HKH0NEW",
+          "ratePerQuantity": 14,
+          "workbookTotalQuantity": 0,
+          "workbookPayable": 0,
+          "workbookBalance": 0,
+          "workbookPaid": 0
+        }
+      ],
+      "dailyEntries": [
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "7317",
+          "quantity": 360
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "7488/5421",
+          "quantity": 200
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "MURTHY",
+          "quantity": 280
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "8744/8059/8629",
+          "quantity": 50
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "1530/0088",
+          "quantity": 75
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "5182/8269",
+          "quantity": 50
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "4383",
+          "quantity": 300
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "7692",
+          "quantity": 50
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "AVA",
+          "quantity": 480
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "PS",
+          "quantity": 95
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "ASHOKA",
+          "quantity": 60
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "RENUKA",
+          "quantity": 225
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "MM",
+          "quantity": 170
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "VENKA",
+          "quantity": 450
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "VBS(FOR)",
+          "quantity": 50
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "CHOW",
+          "quantity": 70
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "GRS",
+          "quantity": 150
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "HKH",
+          "quantity": 100
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "BAJARANGI",
+          "quantity": 50
+        },
+        {
+          "date": "2026-08-02",
+          "vehicleNumber": "7317",
+          "quantity": 300
+        },
+        {
+          "date": "2026-08-02",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-08-02",
+          "vehicleNumber": "MURTHY",
+          "quantity": 260
+        },
+        {
+          "date": "2026-08-02",
+          "vehicleNumber": "5182/8269",
+          "quantity": 50
+        },
+        {
+          "date": "2026-08-02",
+          "vehicleNumber": "4383",
+          "quantity": 180
+        },
+        {
+          "date": "2026-08-02",
+          "vehicleNumber": "AVA",
+          "quantity": 150
+        },
+        {
+          "date": "2026-08-02",
+          "vehicleNumber": "4409",
+          "quantity": 100
+        },
+        {
+          "date": "2026-08-02",
+          "vehicleNumber": "RENUKA",
+          "quantity": 50
+        },
+        {
+          "date": "2026-08-02",
+          "vehicleNumber": "GRS",
+          "quantity": 50
+        },
+        {
+          "date": "2026-08-02",
+          "vehicleNumber": "MP",
+          "quantity": 75
+        },
+        {
+          "date": "2026-08-02",
+          "vehicleNumber": "SLV",
+          "quantity": 200
+        },
+        {
+          "date": "2026-08-02",
+          "vehicleNumber": "BAJARANGI",
+          "quantity": 60
+        },
+        {
+          "date": "2026-08-02",
+          "vehicleNumber": "CHOW0C",
+          "quantity": 100
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "8448",
+          "quantity": 260
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "7488/5421",
+          "quantity": 260
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "8744/8059/8629",
+          "quantity": 100
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "1430",
+          "quantity": 375
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "5182/8269",
+          "quantity": 100
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "4383",
+          "quantity": 310
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "4021",
+          "quantity": 100
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "AVA",
+          "quantity": 425
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "8712",
+          "quantity": 125
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "8735",
+          "quantity": 140
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "RENUKA",
+          "quantity": 250
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "VENKA",
+          "quantity": 150
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "VBS(FOR)",
+          "quantity": 50
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "NANDA",
+          "quantity": 60
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "KK",
+          "quantity": 100
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "ABHISHEK",
+          "quantity": 70
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "KUTTI",
+          "quantity": 140
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "VINAYAKA",
+          "quantity": 150
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "MNM",
+          "quantity": 50
+        },
+        {
+          "date": "2026-08-03",
+          "vehicleNumber": "SBM",
+          "quantity": 250
+        }
+      ],
+      "payments": [
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "7317",
+          "amount": 4500
+        },
+        {
+          "date": "2026-08-01",
+          "vehicleNumber": "AVA",
+          "amount": 8820
+        },
+        {
+          "date": "2026-08-02",
+          "vehicleNumber": "7317",
+          "amount": 108
+        }
+      ],
+      "workbookDailyTotals": [
+        {
+          "date": "2026-08-01",
+          "quantity": 3525,
+          "mt": 176.25
+        },
+        {
+          "date": "2026-08-02",
+          "quantity": 1835,
+          "mt": 91.75
+        },
+        {
+          "date": "2026-08-03",
+          "quantity": 3465,
+          "mt": 173.25
+        },
+        {
+          "date": "2026-08-04",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-05",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-06",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-07",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-08",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-09",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-10",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-11",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-12",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-13",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-14",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-15",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-16",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-17",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-18",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-19",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-20",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-21",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-22",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-23",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-24",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-25",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-26",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-27",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-28",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-29",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-30",
+          "quantity": 0,
+          "mt": 0
+        },
+        {
+          "date": "2026-08-31",
+          "quantity": 0,
+          "mt": 0
+        }
+      ]
+    }
+  ]
+}

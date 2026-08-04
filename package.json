@@ -1,0 +1,23 @@
+{
+  "name": "my-trucks-dashboard",
+  "version": "1.2.0",
+  "private": true,
+  "description": "Shared vehicle quantity, MT and settlement dashboard",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.2.0",
+    "exceljs": "^4.4.0",
+    "express": "^5.1.0",
+    "jsdom": "^29.1.1",
+    "puppeteer": "^25.4.0",
+    "ws": "^8.18.3"
+  }
+}
