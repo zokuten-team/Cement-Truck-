@@ -4,6 +4,7 @@ const state = {
   selectedDate: "2026-08-04",
   search: "",
   mobileTab: "register",
+  sortMode: "alphabetical",
   clientId: localStorage.getItem("my-trucks-client-id") || crypto.randomUUID(),
   actor: localStorage.getItem("my-trucks-operator") || "Operator",
 };
@@ -59,14 +60,7 @@ function model() {
   const data = state.data;
   const dates = daysInMonth(state.month);
   const entries = new Map(data.entries.map(e=>[key(e.date,e.vehicleId),e]));
-  const vehicles = data.vehicles.filter(v => !state.search || `${v.driverName} ${v.vehicleNumber}`.toLowerCase().includes(state.search.toLowerCase())).sort((a, b) => {
-    const nameA = (a.driverName || "").toLowerCase();
-    const nameB = (b.driverName || "").toLowerCase();
-    if (nameA !== nameB) return nameA < nameB ? -1 : 1;
-    const numA = (a.vehicleNumber || "").toLowerCase();
-    const numB = (b.vehicleNumber || "").toLowerCase();
-    return numA < numB ? -1 : (numA > numB ? 1 : 0);
-  });
+  let vehicles = data.vehicles.filter(v => !state.search || `${v.driverName} ${v.vehicleNumber}`.toLowerCase().includes(state.search.toLowerCase()));
   const stats = new Map();
   for (const vehicle of data.vehicles) {
     const quantity = data.entries.filter(e=>e.vehicleId===vehicle.id).reduce((s,e)=>s+Number(e.quantity),0);
@@ -75,6 +69,20 @@ function model() {
     const balance = payable-paid;
     stats.set(vehicle.id,{quantity,payable,paid,balance,status:Math.abs(balance)<.01?"cleared":balance>0?"pending":"excess"});
   }
+  vehicles = vehicles.sort((a, b) => {
+    if (state.sortMode === "pending" || state.sortMode === "cleared") {
+      const sA = stats.get(a.id), sB = stats.get(b.id);
+      if (state.sortMode === "pending") {
+        if (sB.balance !== sA.balance) return sB.balance - sA.balance;
+      } else {
+        if (sB.paid !== sA.paid) return sB.paid - sA.paid;
+      }
+    }
+    const nameA = (a.driverName || "").toLowerCase(), nameB = (b.driverName || "").toLowerCase();
+    if (nameA !== nameB) return nameA < nameB ? -1 : 1;
+    const numA = (a.vehicleNumber || "").toLowerCase(), numB = (b.vehicleNumber || "").toLowerCase();
+    return numA < numB ? -1 : (numA > numB ? 1 : 0);
+  });
   const daily = new Map(dates.map(date=>{ const quantity=data.entries.filter(e=>e.date===date).reduce((s,e)=>s+Number(e.quantity),0); return [date,{quantity,mt:quantity/data.unitsPerMt}]; }));
   const all=[...stats.values()], quantity=all.reduce((s,v)=>s+v.quantity,0);
   return {data,dates,entries,vehicles,stats,daily,totals:{quantity,mt:quantity/data.unitsPerMt,pending:all.reduce((s,v)=>s+Math.max(v.balance,0),0),excess:all.reduce((s,v)=>s+Math.max(-v.balance,0),0),cleared:all.filter(v=>v.status==="cleared").length}};
@@ -84,7 +92,7 @@ function desktop({data,dates,entries,vehicles,stats,daily,totals}) {
   const heads=vehicles.map(v=>{const s=stats.get(v.id);return `<th class="driver-head ${s.status}"><div><button class="manage-column" data-manage="${v.id}" title="Edit driver and vehicle" aria-label="Edit ${escapeHtml(v.driverName)}">•••</button><strong>${escapeHtml(v.driverName)}</strong><span>${escapeHtml(v.vehicleNumber)}</span><small>${money.format(v.ratePerQuantity)} / qty</small><i></i></div></th>`}).join("");
   const rows=dates.map(date=>`<tr><th class="sticky date-cell">${longDate.format(dateObj(date))}</th><td class="sticky qty-cell">${daily.get(date).quantity?number.format(daily.get(date).quantity):"—"}</td><td class="sticky mt-cell">${daily.get(date).mt?number.format(daily.get(date).mt):"—"}</td>${vehicles.map(v=>{const e=entries.get(key(date,v.id));return `<td class="${e?.quantity?"has-value":""}"><button class="matrix-cell" data-cell="${date}|${v.id}">${e?.quantity?number.format(e.quantity):"<span>+</span>"}</button></td>`}).join("")}<td></td></tr>`).join("");
   const cards=vehicles.map(v=>{const s=stats.get(v.id);return `<article class="settlement-card ${s.status}"><div class="settlement-top"><div><strong>${escapeHtml(v.driverName)}</strong><span>${escapeHtml(v.vehicleNumber)}</span></div><span class="card-actions"><span class="status-pill">${s.status}</span><button data-manage="${v.id}" title="Edit">•••</button></span></div><div class="balance-value"><span>${s.status==="excess"?"Excess":s.status==="cleared"?"Balance":"Pending"}</span><strong>${money.format(Math.abs(s.balance))}</strong></div><div class="settlement-meta"><span><small>Qty</small>${number.format(s.quantity)}</span><span><small>Payable</small>${money.format(s.payable)}</span><span><small>Paid</small>${money.format(s.paid)}</span></div></article>`}).join("");
-  return `<aside class="rail"><div class="brand-mark">MT</div><button class="rail-button active">▦</button><button class="rail-button" data-action="payment">₹</button><button class="rail-button" data-action="drivers">＋</button><button class="rail-button" data-action="settings">⚙</button><div class="rail-spacer"></div><button class="rail-avatar" data-action="actor">${escapeHtml(state.actor[0])}</button></aside><section class="workspace"><header class="app-header"><div class="title-group"><span class="eyebrow">Fleet operations</span><h1>My Trucks</h1><p>Daily quantity, tonnage and payment control</p></div><div class="header-actions"><div class="live-users"><i></i><b>Live</b><div class="avatar-stack">${(data.activeUsers||[]).map(u=>`<span title="${escapeHtml(u.displayName)}">${escapeHtml(u.displayName[0])}</span>`).join("")}</div><small>${Math.max(data.activeUsers?.length||0,1)} active</small></div><button class="secondary-button export-button" data-action="export">↓ Excel</button><button class="secondary-button" data-action="settings">Settings</button><button class="secondary-button" data-action="payment">Payments</button><button class="primary-button" data-action="drivers">Manage drivers</button></div></header><div class="desktop-dashboard"><section class="control-row"><div class="month-control"><button data-month="-1">${icon("left")}</button><div><span>Register month</span><strong>${monthLabel(state.month)}</strong></div><button data-month="1">${icon("right")}</button></div><div class="legend"><span><i class="pending"></i>Underpaid</span><span><i class="cleared"></i>Paid</span><span><i class="excess"></i>Excess paid</span></div><label class="search-box"><span>${icon("search")}</span><input id="desktop-search" value="${escapeHtml(state.search)}" placeholder="Find driver or vehicle"></label></section><section class="kpi-grid"><article><span>Total quantity</span><strong>${number.format(totals.quantity)}</strong><small>${monthLabel(state.month)}</small></article><article><span>Total MT</span><strong>${number.format(totals.mt)}</strong><small>${data.unitsPerMt} qty = 1 MT</small></article><article class="pending"><span>Underpaid amount</span><strong>${money.format(totals.pending)}</strong><small>Action required</small></article><article class="cleared"><span>Paid vehicles</span><strong>${totals.cleared}</strong><small>Fully settled</small></article><article class="excess"><span>Excess paid</span><strong>${money.format(totals.excess)}</strong><small>Review adjustment</small></article></section><section class="register-card"><div class="register-heading"><div><span class="eyebrow">Daily vehicle register</span><h2>Dates on the left. Drivers on top.</h2></div><span class="sync-note"><i></i>Click ••• on any driver to edit</span></div><div class="matrix-wrap"><table class="register-matrix"><thead><tr><th class="sticky date-head">Date</th><th class="sticky qty-head">Total Qty</th><th class="sticky mt-head">MTs</th>${heads}<th class="add-column"><button data-action="vehicle">+<span>Add</span></button></th></tr></thead><tbody>${rows}</tbody><tfoot><tr><th class="sticky date-cell">Month total</th><td class="sticky qty-cell">${number.format(totals.quantity)}</td><td class="sticky mt-cell">${number.format(totals.mt)}</td>${vehicles.map(v=>`<td>${number.format(stats.get(v.id).quantity)}</td>`).join("")}<td></td></tr></tfoot></table></div></section><section class="settlement-section"><div class="section-heading"><div><span class="eyebrow">Monthly settlement</span><h2>Driver and vehicle balances</h2></div><button class="text-button" data-action="payment">Manage payments ›</button></div><div class="settlement-grid">${cards}</div></section></div></section>`;
+  return `<aside class="rail"><div class="brand-mark">MT</div><button class="rail-button active">▦</button><button class="rail-button" data-action="payment">₹</button><button class="rail-button" data-action="drivers">＋</button><button class="rail-button" data-action="settings">⚙</button><div class="rail-spacer"></div><button class="rail-avatar" data-action="actor">${escapeHtml(state.actor[0])}</button></aside><section class="workspace"><header class="app-header"><div class="title-group"><span class="eyebrow">Fleet operations</span><h1>My Trucks</h1><p>Daily quantity, tonnage and payment control</p></div><div class="header-actions"><div class="live-users"><i></i><b>Live</b><div class="avatar-stack">${(data.activeUsers||[]).map(u=>`<span title="${escapeHtml(u.displayName)}">${escapeHtml(u.displayName[0])}</span>`).join("")}</div><small>${Math.max(data.activeUsers?.length||0,1)} active</small></div><button class="secondary-button export-button" data-action="export">↓ Excel</button><button class="secondary-button" data-action="settings">Settings</button><button class="secondary-button" data-action="payment">Payments</button><button class="primary-button" data-action="drivers">Manage drivers</button></div></header><div class="desktop-dashboard"><section class="control-row"><div class="month-control"><button data-month="-1">${icon("left")}</button><div><span>Register month</span><strong>${monthLabel(state.month)}</strong></div><button data-month="1">${icon("right")}</button></div><div class="legend"><span><i class="pending"></i>Underpaid</span><span><i class="cleared"></i>Paid</span><span><i class="excess"></i>Excess paid</span></div><label class="search-box"><span>${icon("search")}</span><input id="desktop-search" value="${escapeHtml(state.search)}" placeholder="Find driver or vehicle"></label></section><section class="kpi-grid"><article><span>Total quantity</span><strong>${number.format(totals.quantity)}</strong><small>${monthLabel(state.month)}</small></article><article><span>Total MT</span><strong>${number.format(totals.mt)}</strong><small>${data.unitsPerMt} qty = 1 MT</small></article><article class="pending"><span>Underpaid amount</span><strong>${money.format(totals.pending)}</strong><small>Action required</small></article><article class="cleared"><span>Paid vehicles</span><strong>${totals.cleared}</strong><small>Fully settled</small></article><article class="excess"><span>Excess paid</span><strong>${money.format(totals.excess)}</strong><small>Review adjustment</small></article></section><section class="register-card"><div class="register-heading"><div><span class="eyebrow">Daily vehicle register</span><h2>Dates on the left. Drivers on top.</h2></div><span class="sync-note"><i></i>Click ••• on any driver to edit</span></div><div class="matrix-wrap"><table class="register-matrix"><thead><tr><th class="sticky date-head">Date</th><th class="sticky qty-head">Total Qty</th><th class="sticky mt-head">MTs</th>${heads}<th class="add-column"><button data-action="vehicle">+<span>Add</span></button></th></tr></thead><tbody>${rows}</tbody><tfoot><tr><th class="sticky date-cell">Month total</th><td class="sticky qty-cell">${number.format(totals.quantity)}</td><td class="sticky mt-cell">${number.format(totals.mt)}</td>${vehicles.map(v=>`<td>${number.format(stats.get(v.id).quantity)}</td>`).join("")}<td></td></tr></tfoot></table></div></section><section class="settlement-section"><div class="section-heading"><div><span class="eyebrow">Monthly settlement</span><h2>Driver and vehicle balances</h2></div><div class="settlement-actions"><select id="sort-select"><option value="alphabetical" ${state.sortMode==="alphabetical"?"selected":""}>Alphabetical</option><option value="pending" ${state.sortMode==="pending"?"selected":""}>Pending amount</option><option value="cleared" ${state.sortMode==="cleared"?"selected":""}>Cleared amount</option></select><button class="text-button" data-action="payment">Manage payments ›</button></div></div><div class="settlement-grid">${cards}</div></section></div></section>`;
 }
 
 function mobile({data,dates,entries,vehicles,stats,daily,totals}) {
@@ -105,6 +113,8 @@ function bind() {
   document.querySelectorAll("[data-month]").forEach(b=>b.onclick=()=>{state.month=shiftMonth(state.month,Number(b.dataset.month));load()});
   document.querySelectorAll("[data-date]").forEach(b=>b.onclick=()=>{state.selectedDate=b.dataset.date;render()});
   document.querySelectorAll("[data-tab]").forEach(b=>b.onclick=()=>{state.mobileTab=b.dataset.tab;render()});
+  const sortSelect = document.querySelector("#sort-select");
+  if (sortSelect) sortSelect.onchange = (e) => { state.sortMode = e.target.value; render(); };
   document.querySelectorAll("[data-action='vehicle']").forEach(b=>b.onclick=showVehicleModal);
   document.querySelectorAll("[data-action='drivers']").forEach(b=>b.onclick=showDriverManager);
   document.querySelectorAll("[data-action='payment']").forEach(b=>b.onclick=showPaymentModal);
@@ -148,9 +158,26 @@ function showPaymentModal(paymentId=null){
   const editId=typeof paymentId==="string"?paymentId:null;
   const payment=editId?state.data.payments.find(p=>p.id===editId):null;
   const vehicles=state.data.vehicles;
-  const history=!payment?`<div class="payment-history"><div class="history-heading"><strong>${monthLabel(state.month)} payments</strong><span>${state.data.payments.length} records</span></div>${state.data.payments.length?state.data.payments.map(p=>{const v=vehicles.find(x=>x.id===p.vehicleId);return `<div class="payment-row"><div><strong>${escapeHtml(v?.driverName||"Driver")}</strong><span>${escapeHtml(v?.vehicleNumber||"")} · ${shortDate.format(dateObj(p.date))}${p.note?` · ${escapeHtml(p.note)}`:""}</span></div><b>${money.format(p.amount)}</b><button data-edit-payment="${p.id}">Edit</button><button class="delete-link" data-delete-payment="${p.id}">Delete</button></div>`}).join(""):`<div class="empty-history">No payments recorded this month.</div>`}</div>`:"";
+  const history=!payment?`<div class="payment-history"><div class="history-heading"><strong>${monthLabel(state.month)} payments</strong><span id="payment-count">${state.data.payments.length} records</span></div>${state.data.payments.length?state.data.payments.map(p=>{const v=vehicles.find(x=>x.id===p.vehicleId);return `<div class="payment-row" data-payment-vehicle="${p.vehicleId}"><div><strong>${escapeHtml(v?.driverName||"Driver")}</strong><span>${escapeHtml(v?.vehicleNumber||"")} · ${shortDate.format(dateObj(p.date))}${p.note?` · ${escapeHtml(p.note)}`:""}</span></div><b>${money.format(p.amount)}</b><button data-edit-payment="${p.id}">Edit</button><button class="delete-link" data-delete-payment="${p.id}">Delete</button></div>`}).join(""):`<div class="empty-history">No payments recorded this month.</div>`}</div>`:"";
   modal(`<button class="modal-close" data-close>×</button><span class="eyebrow">Settlement</span><h2>${payment?"Edit payment":"Record and manage payments"}</h2><p>Balances and colours update automatically across every device.</p><form id="payment-form"><label class="field"><span>Driver / vehicle</span><select name="vehicleId">${vehicles.map(v=>`<option value="${v.id}" ${payment?.vehicleId===v.id?"selected":""}>${escapeHtml(v.driverName)} — ${escapeHtml(v.vehicleNumber)}</option>`).join("")}</select></label><div class="field-row"><label class="field"><span>Date</span><input name="date" type="date" required value="${payment?.date||state.selectedDate}"></label><label class="field"><span>Amount</span><input name="amount" type="number" step="0.01" required value="${payment?.amount??""}" placeholder="₹ 0"></label></div><label class="field"><span>Note</span><input name="note" value="${escapeHtml(payment?.note||"")}" placeholder="Reference or adjustment note"></label><small>Use a negative amount only for a reversal or adjustment.</small><div class="modal-actions"><button type="button" class="secondary-button" data-close>Cancel</button><button class="primary-button">${payment?"Save payment":"Record payment"}</button></div></form>${history}`);
   document.querySelectorAll("[data-close]").forEach(b=>b.onclick=closeModal);
+  
+  const selectVehicle = document.querySelector("#payment-form select[name='vehicleId']");
+  if (selectVehicle && !payment) {
+    const filterRows = () => {
+      const selected = selectVehicle.value;
+      let count = 0;
+      document.querySelectorAll(".payment-row").forEach(row => {
+        if (row.dataset.paymentVehicle === selected) { row.style.display = "flex"; count++; }
+        else row.style.display = "none";
+      });
+      const countEl = document.querySelector("#payment-count");
+      if (countEl) countEl.textContent = `${count} record${count===1?"":"s"}`;
+    };
+    selectVehicle.onchange = filterRows;
+    filterRows();
+  }
+
   document.querySelector("#payment-form").onsubmit=async e=>{e.preventDefault();try{const body={vehicleId:e.target.vehicleId.value,date:e.target.date.value,amount:Number(e.target.amount.value),note:e.target.note.value};if(payment)await mutate(`/api/payments/${payment.id}`,"PATCH",body);else await send("/api/payments",body);closeModal();toast(payment?"Payment updated":"Payment recorded for everyone")}catch(err){toast(err.message)}};
   document.querySelectorAll("[data-edit-payment]").forEach(b=>b.onclick=()=>showPaymentModal(b.dataset.editPayment));
   document.querySelectorAll("[data-delete-payment]").forEach(b=>b.onclick=async()=>{if(!confirm("Delete this payment record? The audit history will be retained."))return;try{await mutate(`/api/payments/${b.dataset.deletePayment}`,"DELETE");showPaymentModal();toast("Payment removed")}catch(err){toast(err.message)}});
