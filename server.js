@@ -2,14 +2,14 @@ import express from "express";
 import Database from "better-sqlite3";
 import { WebSocketServer, WebSocket } from "ws";
 import { createServer } from "node:http";
-import { readFileSync, mkdirSync, existsSync } from "node:fs";
+import { readFileSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import crypto from "node:crypto";
 import ExcelJS from "exceljs";
 
 const root = dirname(fileURLToPath(import.meta.url));
-const dataDir = existsSync(join(process.cwd(), ".data")) ? join(process.cwd(), ".data") : join(root, "data");
+const dataDir = join(root, "data");
 mkdirSync(dataDir, { recursive: true });
 const db = new Database(process.env.DATABASE_PATH || join(dataDir, "my-trucks.db"));
 db.pragma("journal_mode = WAL");
@@ -24,6 +24,7 @@ db.exec(`
   CREATE TABLE IF NOT EXISTS payments (id TEXT PRIMARY KEY, date TEXT NOT NULL, vehicle_id TEXT NOT NULL, amount REAL NOT NULL, note TEXT NOT NULL DEFAULT '', created_at TEXT NOT NULL, created_by TEXT NOT NULL, updated_at TEXT, updated_by TEXT, voided_at TEXT, voided_by TEXT, FOREIGN KEY(vehicle_id) REFERENCES vehicles(id));
   CREATE INDEX IF NOT EXISTS entries_month_idx ON daily_entries(date, vehicle_id);
   CREATE INDEX IF NOT EXISTS payments_month_idx ON payments(date, vehicle_id);
+  CREATE TABLE IF NOT EXISTS audit_logs (id TEXT PRIMARY KEY, timestamp TEXT NOT NULL, actor TEXT NOT NULL, action TEXT NOT NULL, details TEXT NOT NULL);
 `);
 
 const paymentColumns = new Set(db.prepare("PRAGMA table_info(payments)").all().map(column => column.name));
@@ -33,6 +34,11 @@ for (const [column, definition] of Object.entries({ updated_at: "TEXT", updated_
 
 const iso = () => new Date().toISOString();
 const idPart = (value) => String(value).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40) || "item";
+
+const insertAudit = db.prepare("INSERT INTO audit_logs (id, timestamp, actor, action, details) VALUES (?, ?, ?, ?, ?)");
+function logAudit(actor, action, details) {
+  insertAudit.run(crypto.randomUUID(), iso(), String(actor).slice(0, 80), action, details);
+}
 
 function seedWorkbook() {
   const count = db.prepare("SELECT COUNT(*) AS count FROM vehicles").get().count;
@@ -80,6 +86,7 @@ function seedWorkbook() {
         if (vehicleId) insertPayment.run(`seed-payment-${++p}`, payment.date, vehicleId, payment.amount, "Imported workbook payment", timestamp, "Imported workbook");
       }
     }
+    logAudit("System", "Import", "Imported initial seed data from workbook");
   })();
 }
 seedWorkbook();
@@ -135,23 +142,18 @@ app.post("/api/entries", (req, res) => {
   const { date, vehicleId } = req.body;
   const quantity = Number(req.body.quantity);
   const actor = String(req.body.actor || "Operator").slice(0,80);
-  if (!/^\d{4}-\d{2}(-\d{2})?$/.test(date) || !vehicleId || !Number.isFinite(quantity) || quantity < 0) return res.status(400).json({ error: "Valid date, vehicle and non-negative quantity are required" });
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !vehicleId || !Number.isFinite(quantity) || quantity < 0) return res.status(400).json({ error: "Valid date, vehicle and non-negative quantity are required" });
   const existing = db.prepare("SELECT id,version FROM daily_entries WHERE date=? AND vehicle_id=?").get(date, vehicleId);
   if (existing && req.body.version != null && Number(req.body.version) !== existing.version) return res.status(409).json({ error: "Another user updated this quantity. The latest value has been loaded." });
   const timestamp = iso();
   db.transaction(() => {
-    if (existing) db.prepare("UPDATE daily_entries SET quantity=?,note=?,version=version+1,updated_at=?,updated_by=? WHERE id=?").run(quantity, String(req.body.note || ""), timestamp, actor, existing.id);
-    else if (quantity >= 0) db.prepare("INSERT INTO daily_entries (id,date,vehicle_id,quantity,note,version,updated_at,updated_by) VALUES (?,?,?,?,?,1,?,?)").run(crypto.randomUUID(), date, vehicleId, quantity, String(req.body.note || ""), timestamp, actor);
-    bumpRevision();
-  })();
-  res.json({ ok: true });
-});
-
-app.delete("/api/entries/:id", (req, res) => {
-  const existing = db.prepare("SELECT id FROM daily_entries WHERE id=?").get(req.params.id);
-  if (!existing) return res.status(404).json({ error: "Entry not found" });
-  db.transaction(() => {
-    db.prepare("DELETE FROM daily_entries WHERE id=?").run(req.params.id);
+    if (existing) {
+      db.prepare("UPDATE daily_entries SET quantity=?,note=?,version=version+1,updated_at=?,updated_by=? WHERE id=?").run(quantity, String(req.body.note || ""), timestamp, actor, existing.id);
+      logAudit(actor, "Updated Quantity", `Updated quantity to ${quantity} for vehicle ${vehicleId} on ${date}`);
+    } else if (quantity > 0) {
+      db.prepare("INSERT INTO daily_entries (id,date,vehicle_id,quantity,note,version,updated_at,updated_by) VALUES (?,?,?,?,?,1,?,?)").run(crypto.randomUUID(), date, vehicleId, quantity, String(req.body.note || ""), timestamp, actor);
+      logAudit(actor, "Added Quantity", `Set quantity to ${quantity} for vehicle ${vehicleId} on ${date}`);
+    }
     bumpRevision();
   })();
   res.json({ ok: true });
@@ -173,6 +175,7 @@ app.post("/api/vehicles", (req, res) => {
     }
     const order = db.prepare("SELECT COALESCE(MAX(sort_order),0)+1 value FROM vehicles").get().value;
     db.prepare("INSERT INTO vehicles (id,driver_id,vehicle_number,rate_per_quantity,active,sort_order,created_at,updated_at) VALUES (?,?,?,?,1,?,?,?)").run(crypto.randomUUID(), driver.id, vehicleNumber, rate, order, timestamp, timestamp);
+    logAudit(String(req.body.actor || "Operator").slice(0,80), "Added Vehicle", `Added vehicle ${vehicleNumber} for driver ${driverName}`);
     bumpRevision();
   })();
   res.status(201).json({ ok: true });
@@ -203,6 +206,7 @@ app.patch("/api/vehicles/:id", (req, res) => {
       }
     }
     db.prepare("UPDATE vehicles SET driver_id=?,vehicle_number=?,rate_per_quantity=?,updated_at=? WHERE id=?").run(driver.id, vehicleNumber, rate, timestamp, vehicleId);
+    logAudit(String(req.body.actor || "Operator").slice(0,80), "Edited Vehicle", `Updated vehicle ${vehicleNumber} for driver ${driverName}`);
     bumpRevision();
   })();
   res.json({ ok: true });
@@ -213,6 +217,7 @@ app.delete("/api/vehicles/:id", (req, res) => {
   if (!vehicle) return res.status(404).json({ error: "Vehicle not found" });
   db.transaction(() => {
     db.prepare("UPDATE vehicles SET active=0,updated_at=? WHERE id=?").run(iso(), req.params.id);
+    logAudit(String(req.body?.actor || "Operator").slice(0,80), "Deleted Vehicle", `Deleted vehicle with ID ${req.params.id}`);
     bumpRevision();
   })();
   res.json({ ok: true, retainedHistory: true });
@@ -225,6 +230,7 @@ app.delete("/api/drivers/:id", (req, res) => {
   db.transaction(() => {
     db.prepare("UPDATE drivers SET active=0,updated_at=? WHERE id=?").run(timestamp, req.params.id);
     db.prepare("UPDATE vehicles SET active=0,updated_at=? WHERE driver_id=?").run(timestamp, req.params.id);
+    logAudit(String(req.body?.actor || "Operator").slice(0,80), "Deleted Driver", `Deleted driver with ID ${req.params.id} and assigned vehicles`);
     bumpRevision();
   })();
   res.json({ ok: true, retainedHistory: true });
@@ -234,7 +240,9 @@ app.post("/api/payments", (req, res) => {
   const amount = Number(req.body.amount);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(req.body.date) || !req.body.vehicleId || !Number.isFinite(amount) || amount === 0) return res.status(400).json({ error: "Valid date, vehicle and non-zero amount are required" });
   db.transaction(() => {
-    db.prepare("INSERT INTO payments (id,date,vehicle_id,amount,note,created_at,created_by) VALUES (?,?,?,?,?,?,?)").run(crypto.randomUUID(), req.body.date, req.body.vehicleId, amount, String(req.body.note || ""), iso(), String(req.body.actor || "Operator").slice(0,80));
+    const actor = String(req.body.actor || "Operator").slice(0,80);
+    db.prepare("INSERT INTO payments (id,date,vehicle_id,amount,note,created_at,created_by) VALUES (?,?,?,?,?,?,?)").run(crypto.randomUUID(), req.body.date, req.body.vehicleId, amount, String(req.body.note || ""), iso(), actor);
+    logAudit(actor, "Recorded Payment", `Recorded ₹${amount} payment for vehicle ${req.body.vehicleId}`);
     bumpRevision();
   })();
   res.status(201).json({ ok: true });
@@ -249,6 +257,7 @@ app.patch("/api/payments/:id", (req, res) => {
   const actor = String(req.body.actor || "Operator").slice(0,80);
   db.transaction(() => {
     db.prepare("UPDATE payments SET date=?,vehicle_id=?,amount=?,note=?,updated_at=?,updated_by=? WHERE id=?").run(req.body.date, req.body.vehicleId, amount, String(req.body.note || ""), timestamp, actor, req.params.id);
+    logAudit(actor, "Updated Payment", `Updated payment to ₹${amount} for vehicle ${req.body.vehicleId}`);
     bumpRevision();
   })();
   res.json({ ok: true });
@@ -258,7 +267,9 @@ app.delete("/api/payments/:id", (req, res) => {
   const payment = db.prepare("SELECT id FROM payments WHERE id=? AND voided_at IS NULL").get(req.params.id);
   if (!payment) return res.status(404).json({ error: "Payment not found" });
   db.transaction(() => {
-    db.prepare("UPDATE payments SET voided_at=?,voided_by=? WHERE id=?").run(iso(), String(req.body?.actor || "Operator").slice(0,80), req.params.id);
+    const actor = String(req.body?.actor || "Operator").slice(0,80);
+    db.prepare("UPDATE payments SET voided_at=?,voided_by=? WHERE id=?").run(iso(), actor, req.params.id);
+    logAudit(actor, "Deleted Payment", `Deleted payment with ID ${req.params.id}`);
     bumpRevision();
   })();
   res.json({ ok: true, retainedHistory: true });
@@ -269,6 +280,7 @@ app.patch("/api/settings", (req, res) => {
   if (!Number.isFinite(unitsPerMt) || unitsPerMt <= 0) return res.status(400).json({ error: "Quantity units per MT must be greater than zero" });
   db.transaction(() => {
     db.prepare("INSERT INTO settings (key,value,updated_at) VALUES ('units_per_mt',?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value,updated_at=excluded.updated_at").run(String(unitsPerMt), iso());
+    logAudit(String(req.body?.actor || "Operator").slice(0,80), "Updated Settings", `Changed units per MT to ${unitsPerMt}`);
     bumpRevision();
   })();
   res.json({ ok: true });
@@ -408,10 +420,31 @@ app.get("/api/export", async (req, res, next) => {
 });
 
 app.get("/health", (_req, res) => res.json({ status: "ok", database: "sqlite-wal", websocket: true }));
+
+app.get("/api/audit", (req, res) => {
+  const logs = db.prepare("SELECT id, timestamp, actor, action, details FROM audit_logs ORDER BY timestamp DESC LIMIT 200").all();
+  res.set("Cache-Control", "no-store").json(logs);
+});
+
+app.get("/api/backup", (req, res, next) => {
+  try {
+    db.pragma("wal_checkpoint(TRUNCATE)");
+    const dbPath = process.env.DATABASE_PATH || join(dataDir, "my-trucks.db");
+    res.download(dbPath, "my-trucks-backup.db");
+  } catch (error) {
+    next(error);
+  }
+});
+
 app.use((err, _req, res, _next) => { console.error(err); res.status(500).json({ error: "Unexpected server error" }); });
 
 wss.on("connection", socket => socket.send(JSON.stringify({ type: "connected" })));
 const port = Number(process.env.PORT || 3000);
-server.listen(port, "0.0.0.0", () => console.log(`My Trucks running on http://localhost:${port}`));
+server.listen(port, "0.0.0.0", () => {
+  console.log(`My Trucks running on http://localhost:${port}`);
+  setInterval(() => {
+    try { db.pragma("wal_checkpoint(TRUNCATE)"); } catch(e) {}
+  }, 5 * 60 * 1000);
+});
 
 export { db, server };
