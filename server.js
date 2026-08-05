@@ -451,8 +451,8 @@ function syncToGitHub() {
     execSync('git config user.email "bot@trucks.com"', { stdio: 'ignore' });
     execSync('git config user.name "Backup Bot"', { stdio: 'ignore' });
     
-    // Add the DB file
-    execSync(`git add ${dbPath}`, { stdio: 'ignore' });
+    // Add the DB file (force add since data/*.db is in .gitignore)
+    execSync(`git add -f ${dbPath}`, { stdio: 'ignore' });
     
     // Check if there are changes
     const hasChanges = execSync(`git status --porcelain ${dbPath}`).toString().trim();
