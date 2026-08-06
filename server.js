@@ -1,18 +1,30 @@
 import express from "express";
-import Database from "better-sqlite3";
+import Database from "libsql";
 import { WebSocketServer, WebSocket } from "ws";
 import { createServer } from "node:http";
 import { execSync } from "node:child_process";
-import { readFileSync, mkdirSync } from "node:fs";
+import { readFileSync, mkdirSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import crypto from "node:crypto";
 import ExcelJS from "exceljs";
 
 const root = dirname(fileURLToPath(import.meta.url));
-const dataDir = join(root, "data");
+const dataDir = existsSync(join(process.cwd(), ".data")) ? join(process.cwd(), ".data") : join(root, "data");
 mkdirSync(dataDir, { recursive: true });
-const db = new Database(process.env.DATABASE_PATH || join(dataDir, "my-trucks.db"));
+
+const dbOptions = {};
+if (process.env.TURSO_DATABASE_URL && process.env.TURSO_AUTH_TOKEN) {
+  dbOptions.syncUrl = process.env.TURSO_DATABASE_URL;
+  dbOptions.authToken = process.env.TURSO_AUTH_TOKEN;
+}
+
+const db = new Database(process.env.DATABASE_PATH || join(dataDir, "my-trucks.db"), dbOptions);
+if (dbOptions.syncUrl) {
+  db.sync();
+  console.log("Connected to Turso Cloud Database");
+}
+
 db.pragma("journal_mode = WAL");
 db.pragma("foreign_keys = ON");
 db.pragma("busy_timeout = 5000");
@@ -441,46 +453,15 @@ app.use((err, _req, res, _next) => { console.error(err); res.status(500).json({ 
 
 wss.on("connection", socket => socket.send(JSON.stringify({ type: "connected" })));
 const port = Number(process.env.PORT || 3000);
-function syncToGitHub() {
-  const token = process.env.GITHUB_TOKEN;
-  if (!token) return;
-  try {
-    const dbPath = process.env.DATABASE_PATH || join(dataDir, "my-trucks.db");
-    
-    // Configure bot identity
-    execSync('git config user.email "bot@trucks.com"', { stdio: 'ignore' });
-    execSync('git config user.name "Backup Bot"', { stdio: 'ignore' });
-    
-    // Add the DB file (force add since data/*.db is in .gitignore)
-    execSync(`git add -f ${dbPath}`, { stdio: 'ignore' });
-    
-    // Check if there are changes
-    const hasChanges = execSync(`git status --porcelain ${dbPath}`).toString().trim();
-    if (hasChanges) {
-      execSync('git commit -m "chore: auto-backup database"', { stdio: 'ignore' });
-      
-      // Get remote URL and inject token securely
-      let remoteUrl = execSync('git config --get remote.origin.url').toString().trim();
-      if (remoteUrl.startsWith('https://')) {
-        const secureUrl = remoteUrl.replace('https://', `https://oauth2:${token}@`);
-        execSync(`git push "${secureUrl}" main`, { stdio: 'ignore' });
-        console.log("Successfully backed up database to GitHub.");
-      } else {
-        console.error("Failed to sync: remote.origin.url is not an HTTPS URL.");
-      }
-    }
-  } catch (err) {
-    console.error("Failed to sync database to GitHub:", err.message);
-  }
-}
-
 server.listen(port, "0.0.0.0", () => {
   console.log(`My Trucks running on http://localhost:${port}`);
   setInterval(() => {
     try { 
-      db.pragma("wal_checkpoint(TRUNCATE)"); 
-      syncToGitHub();
-    } catch(e) {}
+      db.pragma("wal_checkpoint(TRUNCATE)");
+      if (db.sync) db.sync();
+    } catch(e) {
+      console.error("Background sync failed:", e.message);
+    }
   }, 5 * 60 * 1000);
 });
 

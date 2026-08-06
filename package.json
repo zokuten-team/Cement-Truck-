@@ -13,11 +13,10 @@
     "test": "node --test tests/*.test.js"
   },
   "dependencies": {
-    "better-sqlite3": "^12.2.0",
+    "@libsql/client": "^0.17.4",
     "exceljs": "^4.4.0",
     "express": "^5.1.0",
-    "jsdom": "^29.1.1",
-    "puppeteer": "^25.4.0",
+    "libsql": "^0.5.29",
     "ws": "^8.18.3"
   }
 }
