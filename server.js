@@ -48,9 +48,8 @@ for (const [column, definition] of Object.entries({ updated_at: "TEXT", updated_
 const iso = () => new Date().toISOString();
 const idPart = (value) => String(value).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40) || "item";
 
-const insertAudit = db.prepare("INSERT INTO audit_logs (id, timestamp, actor, action, details) VALUES (?, ?, ?, ?, ?)");
 function logAudit(actor, action, details) {
-  insertAudit.run(crypto.randomUUID(), iso(), String(actor).slice(0, 80), action, details);
+  db.prepare("INSERT INTO audit_logs (id, timestamp, actor, action, details) VALUES (?, ?, ?, ?, ?)").run(crypto.randomUUID(), iso(), String(actor).slice(0, 80), action, details);
 }
 
 function seedWorkbook() {
@@ -70,33 +69,28 @@ function seedWorkbook() {
   const driverNames = [...new Set([...vehicleMap.values()].map(v => v.driverName).filter(name => name !== "Unassigned"))];
   const driverIds = new Map();
   const vehicleIds = new Map();
-  const insertSetting = db.prepare("INSERT OR IGNORE INTO settings (key,value,updated_at) VALUES (?,?,?)");
-  const insertDriver = db.prepare("INSERT INTO drivers (id,name,active,sort_order,created_at,updated_at) VALUES (?,?,1,?,?,?)");
-  const insertVehicle = db.prepare("INSERT INTO vehicles (id,driver_id,vehicle_number,rate_per_quantity,active,sort_order,created_at,updated_at) VALUES (?,?,?,?,1,?,?,?)");
-  const insertEntry = db.prepare("INSERT OR IGNORE INTO daily_entries (id,date,vehicle_id,quantity,note,version,updated_at,updated_by) VALUES (?,?,?,?,?,1,?,?)");
-  const insertPayment = db.prepare("INSERT OR IGNORE INTO payments (id,date,vehicle_id,amount,note,created_at,created_by) VALUES (?,?,?,?,?,?,?)");
   db.transaction(() => {
-    insertSetting.run("revision", "1", timestamp);
-    insertSetting.run("units_per_mt", "20", timestamp);
+    db.prepare("INSERT OR IGNORE INTO settings (key,value,updated_at) VALUES (?,?,?)").run("revision", "1", timestamp);
+    db.prepare("INSERT OR IGNORE INTO settings (key,value,updated_at) VALUES (?,?,?)").run("units_per_mt", "20", timestamp);
     driverNames.forEach((name, index) => {
       const id = `driver-${idPart(name)}-${index + 1}`;
       driverIds.set(name, id);
-      insertDriver.run(id, name, index, timestamp, timestamp);
+      db.prepare("INSERT INTO drivers (id,name,active,sort_order,created_at,updated_at) VALUES (?,?,1,?,?,?)").run(id, name, index, timestamp, timestamp);
     });
     [...vehicleMap.values()].forEach((vehicle, index) => {
       const id = `vehicle-${idPart(vehicle.vehicleNumber)}-${index + 1}`;
       vehicleIds.set(vehicle.vehicleNumber, id);
-      insertVehicle.run(id, driverIds.get(vehicle.driverName) || null, vehicle.vehicleNumber, vehicle.ratePerQuantity, index, timestamp, timestamp);
+      db.prepare("INSERT INTO vehicles (id,driver_id,vehicle_number,rate_per_quantity,active,sort_order,created_at,updated_at) VALUES (?,?,?,?,1,?,?,?)").run(id, driverIds.get(vehicle.driverName) || null, vehicle.vehicleNumber, vehicle.ratePerQuantity, index, timestamp, timestamp);
     });
     let e = 0, p = 0;
     for (const month of seed.months) {
       for (const entry of month.dailyEntries) {
         const vehicleId = vehicleIds.get(String(entry.vehicleNumber));
-        if (vehicleId) insertEntry.run(`seed-entry-${++e}`, entry.date, vehicleId, entry.quantity, "", timestamp, "Imported workbook");
+        if (vehicleId) db.prepare("INSERT OR IGNORE INTO daily_entries (id,date,vehicle_id,quantity,note,version,updated_at,updated_by) VALUES (?,?,?,?,?,1,?,?)").run(`seed-entry-${++e}`, entry.date, vehicleId, entry.quantity, "", timestamp, "Imported workbook");
       }
       for (const payment of month.payments) {
         const vehicleId = vehicleIds.get(String(payment.vehicleNumber));
-        if (vehicleId) insertPayment.run(`seed-payment-${++p}`, payment.date, vehicleId, payment.amount, "Imported workbook payment", timestamp, "Imported workbook");
+        if (vehicleId) db.prepare("INSERT OR IGNORE INTO payments (id,date,vehicle_id,amount,note,created_at,created_by) VALUES (?,?,?,?,?,?,?)").run(`seed-payment-${++p}`, payment.date, vehicleId, payment.amount, "Imported workbook payment", timestamp, "Imported workbook");
       }
     }
     logAudit("System", "Import", "Imported initial seed data from workbook");
