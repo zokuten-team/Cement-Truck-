@@ -102,7 +102,7 @@ function seedWorkbook() {
     logAudit("System", "Import", "Imported initial seed data from workbook");
   })();
 }
-seedWorkbook();
+setTimeout(seedWorkbook, 500);
 
 const app = express();
 app.disable("x-powered-by");
